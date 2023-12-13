@@ -1,0 +1,11 @@
+Select and Copy: It selects cell B1 in the active sheet and copies its content.
+
+Sheet and Cell Selection: It switches to the sheet named "DATABASE", selects cell A2 on this sheet.
+
+Paste and Autofill: It pastes the copied content from cell B1 into cell A2. Then, it uses the AutoFill method to fill down the value from A2 into the range A2:A10. The type of fill is set to xlFillDefault, which extends a series or copies the value depending on the context of the data.
+
+Final Selection: It selects the range A2:A10.
+
+Disables Cut/Copy Mode: It turns off the cut/copy mode, removing the moving border from the originally copied cell (B1).
+
+This macro is useful for quickly duplicating a value from one cell into a range of cells in another worksheet. However, it lacks dynamic capabilities (like adapting to different ranges or conditions) and error handling (to ensure the "DATABASE" sheet exists).

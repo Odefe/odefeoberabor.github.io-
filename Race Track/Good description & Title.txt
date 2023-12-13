@@ -1,0 +1,18 @@
+Good title & description
+
+1. Title: "Advanced Data Processing and Organization for Horse Racing Analysis"
+Description: Developed a comprehensive Excel VBA macro to restructure and organize complex horse racing data. The macro efficiently handles multiple tasks such as column deletion, row insertion, and cell value modification, preparing the data for in-depth analysis and reporting.
+
+2. Title: "Cross-Platform Excel Data Import Utility"
+Description: Designed and implemented an Excel VBA subroutine for importing data into Excel workbooks. This utility is uniquely compatible with both Windows and Mac OS, featuring custom file dialog boxes for seamless user experience and ensuring the importation of correctly formatted 'Report' files.
+
+3. Title: "Automated Data Duplication and Distribution in Excel"
+Description: Created a simple yet effective Excel VBA macro named 'Macro11'. This tool automates the process of copying data from a specified cell and distributing it across a predefined range in a different worksheet, streamlining repetitive data entry tasks.
+
+4. Title: "Excel File Selection Interface for Multi-OS Environments"
+Description: Engineered a set of Excel VBA functions providing a unified file selection interface, adaptable for both Windows and Mac operating systems. This development enhanced user interaction by facilitating easy and error-free file selection in diverse operating environments.
+
+5. Title: "Dynamic Data Transfer System in Excel"
+Description: Conceptualized and coded an advanced Excel VBA macro for dynamic data transfer between worksheets. This macro intelligently identifies and maps data sections, automating the consolidation of varied data sets into a single, organized worksheet for analysis.
+
+Each title and description pair is tailored to highlight the specific functionality and application of your VBA macros, showcasing your technical skills and problem-solving abilities in Excel. Remember to choose titles and descriptions that best align with your portfolio's theme and the roles or opportunities you're targeting.

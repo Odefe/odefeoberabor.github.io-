@@ -1,0 +1,22 @@
+Variable Initialization: Defines and sets up variables for sheet names, row and column counts, and an array of column letters (varListA).
+
+Sheet Names Assignment: Assigns the names of two worksheets (Sheet5 and Sheet6) to tempSht and dataSht variables.
+
+Data Transfer from tempSht to dataSht:
+
+The macro identifies specific sections of data in tempSht by using a function FindTextcell (not defined in the provided code). This function seems to return the row or column number where a specific text (like "Entrant Stats" or "Cumulative") is found.
+For each identified section, the macro copies data from tempSht and pastes it as values into the corresponding columns in dataSht.
+The data is copied and pasted column-wise. The columns to be transferred from tempSht are determined by the varListA array, and the destination columns in dataSht are found using the FindTextcell function with the column headers.
+Handling Different Data Sections: The macro handles different data sections separately (like "Entrant Stats", "Cumulative", "Split Times") and transfers the corresponding data to dataSht.
+
+Dynamic Column Mapping: For each data section, the macro dynamically identifies the source and destination columns based on the headers (like "Cumulative [Column Name]" or "Split Times [Column Name]").
+
+Looping Through Columns: It uses loops to iterate over the columns in tempSht and transfer the data to dataSht.
+
+In summary, Transfer_Data is a customized macro for transferring structured data from one worksheet to another, with specific logic for handling different sections and dynamically mapping source and destination columns. This is particularly useful in scenarios where data is organized in a consistent format across multiple sections, and there's a need to consolidate this data into a single sheet.
+
+
+
+
+
+

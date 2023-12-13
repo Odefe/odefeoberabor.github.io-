@@ -1,0 +1,19 @@
+Initial Setup: Disables screen updating, event handling, and sets calculation to manual to optimize performance during execution.
+
+File Selection and Validation:
+
+Determines the operating system (Windows or Mac) and prompts the user to select a file through a dialog box.
+Validates if the selected file is the correct report by checking for the keyword "Report" in the filename.
+File Opening and Data Importing:
+
+If the correct file is selected, it opens the workbook and copies data from the first worksheet.
+The copied data is then pasted as values into a specified worksheet (WorksheetNameMain) in the current workbook.
+The name of the imported workbook (without extension) is placed in cell B1 of the target worksheet.
+Final Steps and Cleanup:
+
+Activates the target worksheet and selects cell A1.
+Displays a message box confirming successful data import.
+Re-enables screen updating, event handling, and automatic calculation.
+Error Handling and Exit Conditions:
+
+If no file is selected or an incorrect file is chosen, it displays a message box and sets the ExitAll flag to True, indicating an early exit from the subroutine.

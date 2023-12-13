@@ -1,0 +1,20 @@
+BrowseMac(mypath As String) As String:
+
+This function opens a file dialog on Mac OS to allow the user to select a file.
+It uses AppleScript, embedded within the VBA code, to create the file dialog with a given prompt and default location.
+The function returns the path of the selected file as a string. If there's an error or no file is selected, it returns a specific error number.
+BrowseWin() As String:
+
+This function displays a file dialog in Windows using the Application.FileDialog object.
+It allows the user to select a single file, with a specific filter applied (in this case, for text files with a ".txt" extension).
+The path of the selected file is returned as a string. If no file is selected, it returns "-128", mimicking the behavior of the Mac function for consistency.
+getWINFName(pf) As String and getMACFName(pf) As String:
+
+These two functions extract the filename from the full path for Windows and Mac, respectively.
+They use string manipulation to isolate and return the filename.
+Sub myOperatingSys():
+
+This subroutine detects the operating system (Windows or Mac) and calls the appropriate file browsing function (BrowseWin or BrowseMac).
+It handles the file selection and stores the returned path in a variable.
+If no file is selected (indicated by a return value of "-128"), it displays a message box and exits the subroutine.
+These functions collectively provide a cross-platform solution for file selection in Excel VBA, accommodating the different file dialog mechanisms in Windows and Mac OS. They are particularly useful for applications where the user needs to interactively select files for processing within an Excel macro.
