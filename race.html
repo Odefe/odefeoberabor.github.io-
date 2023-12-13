@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Database Dynamics: Macro-Driven Analysis of Horse Racing Data</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+<body>
+    <header>
+        <h1 style="color: yellow;">Database Dynamics: Macro-Driven Analysis of Horse Racing Data</h1>
+    </header>
+
+    <div class="image-gallery">
+        <!-- Image 2 -->
+        <div class="image-item">
+            <img src="images/Race Track/dt.png" alt="dt">
+            <p style="color: white; font-size: 20px;">Initial Setup: It disables screen updating, event handling, and sets calculation to manual. This improves performance by not updating the Excel interface or recalculating formulas while the macro runs.
+                Variable Declaration and Initialization: It declares and initializes variables for sheet names, row and column counts, and an array of column letters.                
+                </p>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="image-item">
+            <img src="images/Race Track/dt1.png" alt="dt1">
+            <p style="color: white; font-size: 20px;">Finding Specific Data and Row Operations: The macro uses a custom function FindTextcell (not defined in this snippet) to locate specific text in a sheet and returns the row number. It then performs operations based on the found row number, such as inserting and deleting rows, adjusting data in specific ranges, and handling data based on certain conditions.
+                Data Manipulation: The macro appears to process data related to some sort of race (possibly horse racing, given references to "Horse" and "Odds"). It rearranges data, extracts portions of text strings, and aligns them in a structured format. This includes modifying data about horses, owners, odds, and other characteristics.
+                Copying and Pasting Values: After manipulation, the macro copies and pastes data as values to eliminate formulas, ensuring only the final data is present.
+                Split Times Handling: It handles a section named "Split Times", which suggests it's dealing with time-related data, possibly performance metrics in a race.</p>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="image-item">
+            <img src="images/Race Track/dt2.png" alt="dt2">
+            <p style="color: white; font-size: 20px;">Data Transfer and Cleanup: After processing, it calls another subroutine Transfer_Data (not defined in this snippet), presumably to transfer the processed data to another location (like a database). Finally, it re-enables screen updating, event handling, and automatic calculation, and shows a message box indicating successful data transfer.
+
+                Error Handling and Optimization: The macro lacks explicit error handling, which is critical for debugging and ensuring stability, especially in data-intensive operations. Also, the use of direct cell references and loop iterations could be optimized for more efficient data processing.
+                </p>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="image-item">
+            <img src="images/Race Track/pdf34.jpg" alt="How pdf looks (Page 3 & 4)">
+            <p style="color: white; font-size: 20px;">How pdf looks (Page 3 & 4) after being downloaded from the site.</p>
+        </div>
+
+        <!-- Image 7 -->
+        <div class="image-item">
+            <img src="images/Race Track/id.png" alt="id">
+            <p style="color: white; font-size: 20px;">Initial Setup: Disables screen updating, event handling, and sets calculation to manual to optimize performance during execution.
+
+                File Selection and Validation:
+                
+                Determines the operating system (Windows or Mac) and prompts the user to select a file through a dialog box.
+                Validates if the selected file is the correct report by checking for the keyword "Report" in the filename.
+                File Opening and Data Importing:
+                
+                If the correct file is selected, it opens the workbook and copies data from the first worksheet.
+                The copied data is then pasted as values into a specified worksheet (WorksheetNameMain) in the current workbook.
+                The name of the imported workbook (without extension) is placed in cell B1 of the target worksheet.</p>
+        </div>
+
+        <!-- Image 8 -->
+        <div class="image-item">
+            <img src="images/Race Track/id1.png" alt="id1">
+            <p style="color: white; font-size: 20px;">Final Steps and Cleanup:
+
+                Activates the target worksheet and selects cell A1.
+                Displays a message box confirming successful data import.
+                Re-enables screen updating, event handling, and automatic calculation.
+                Error Handling and Exit Conditions:
+                
+                If no file is selected or an incorrect file is chosen, it displays a message box and sets the ExitAll flag to True, indicating an early exit from the subroutine.</p>
+        </div>
+
+        <div class="image-item">
+            <img src="images/Race Track/image_ge.png" alt="image_ge">
+            <p style="color: white; font-size: 20px;">PDF converted to Excel</p>
+        </div>
+
+        <!-- Image 10 -->
+        <div class="image-item">
+            <img src="images/Race Track/image_large (1).png" alt="image_large (1)">
+            <p style="color: white; font-size: 20px;">How page 1 of the PDF looks</p>
+        </div>
+
+        <!-- Image 11 -->
+        <div class="image-item">
+            <img src="images/Race Track/image_large (2).png" alt="image_large (2)">
+            <p style="color: white; font-size: 20px;">4 pages of the pdf converted to Excel</p>
+        </div>
+
+        <!-- Image 12 -->
+        <div class="image-item">
+            <img src="images/Race Track/34excel.jpg" alt="Page Three & Four converted in excel format">
+            <p style="color: white; font-size: 20px;">Page Three & Four converted in excel format.</p>
+        </div>
+
+        <div class="image-item">
+            <img src="images/Race Track/rrpdf.jpg" alt="Race Reports in PDF">
+            <p style="color: white; font-size: 20px;">Race Reports in PDF downloaded from the site.</p>
+        </div>
+
+        <!-- Image 14 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (37).png" alt="Screenshot (37)">
+            <p style="color: white; font-size: 20px;">Database after Marcros</p>
+        </div>
+
+        <!-- Image 15 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (38).png" alt="Screenshot (38)">
+            <p style="color: white; font-size: 20px;">Database after Marcros(2)</div>p>
+        </div>
+
+        <!-- Image 16 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (98).png" alt="Screenshot (98)">
+            <p style="color: white; font-size: 20px;">In this Excel interface, I've set up a user-friendly Database Management System. It features two prominent buttons: 'IMPORT CSV' and 'TRANSFER DATA'. I've designed it to facilitate easy data importation and manipulation. There's also an instruction panel explaining the steps for using the system: importing a CSV report, verifying data structure in TempData sheet, and ensuring 'SplitTimes:Cumulative' is correctly formatted before transferring data to the DATABASE tab. This streamlines the process for the user, making data management straightforward and efficient.</p>
+        </div>
+
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (99).png" alt="Screenshot (99)">
+            <p style="color: white; font-size: 20px;">detailed spreadsheet that lists horse racing statistics, including horse names, owner details, and various performance metrics like race times at different furlong markers after trasering the data.</p>
+        </div>
+
+        <!-- Image 18 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (101).png" alt="Screenshot (101)">
+            <p style="color: white; font-size: 20px;">This is a snapshot of the database tab in my Excel tool. It showcases an extensive list of races, with information like horse names, owners, odds, grades, and performance times on different track conditions. After the marcos has been enabled</p>
+        </div>
+
+        <!-- Image 19 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (102).png" alt="Screenshot (102)">
+            <p style="color: white; font-size: 20px;">Here, I've displayed the macro dialog box with a list of custom macros I've written, such as 'Data Transaction' and 'Import Data'. This allows for efficient data processing and manipulation with a simple click.</p>
+        </div>
+
+        <!-- Image 20 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (136).png" alt="Screenshot (136)">
+            <p style="color: white; font-size: 20px;">Here, the Excel sheet is organized to display a detailed race report. The sheet includes sorting and filtering options for better data navigation and analysis, with comprehensive details for each horse in every race listed.</p>
+        </div>
+
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (137).png" alt="Screenshot (137)">
+            <p style="color: white; font-size: 20px;">This screenshot shows the Excel tool after applying filters to the race data, allowing users to view and analyze specific subsets of the data based on criteria such as race name, date, and horse performance. Filtered by the left direction.</p>
+        </div>
+
+        <!-- Image 22 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (138).png" alt="Screenshot (138)">
+            <p style="color: white; font-size: 20px;">Filtered by Dirt Surface</p>
+        </div>
+
+        <!-- Image 24 -->
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (140).png" alt="Screenshot (140)">
+            <p style="color: white; font-size: 20px;">Wider view of full database</p>
+        </div>
+
+        <div class="image-item">
+            <img src="images/Race Track/Screenshot (175).png" alt="Screenshot (175)">
+            <p style="color: white; font-size: 20px;">Filtered by Turf Surface</p>
+        </div>
+
+        <!-- Image 26 -->
+        <div class="image-item">
+            <img src="images/Race Track/td.png" alt="td">
+            <p style="color: white; font-size: 20px;">Variable Initialization: Defines and sets up variables for sheet names, row and column counts, and an array of column letters (varListA).
+                Sheet Names Assignment: Assigns the names of two worksheets (Sheet5 and Sheet6) to tempSht and dataSht variables
+                Data Transfer from tempSht to dataSht:
+                The macro identifies specific sections of data in tempSht by using a function FindTextcell (not defined in the provided code). This function seems to return the row or column number where a specific text (like "Entrant Stats" or "Cumulative") is found.
+                For each identified section, the macro copies data from tempSht and pastes it as values into the corresponding columns in dataSht.
+                The data is copied and pasted column-wise. The columns to be transferred from tempSht are determined by the varListA array, and the destination columns in dataSht are found using the FindTextcell function with the column headers.
+                Handling Different Data Sections: The macro handles different data sections separately (like "Entrant Stats", "Cumulative", "Split Times") and transfers the corresponding data to dataSht.
+                </p>
+        </div>
+
+        <!-- Image 27 -->
+        <div class="image-item">
+            <img src="images/Race Track/tdend.png" alt="tdend">
+            <p style="color: white; font-size: 20px;">Dynamic Column Mapping: For each data section, the macro dynamically identifies the source and destination columns based on the headers (like "Cumulative [Column Name]" or "Split Times [Column Name]").
+
+                Looping Through Columns: It uses loops to iterate over the columns in tempSht and transfer the data to dataSht.
+                
+                In summary, Transfer_Data is a customized macro for transferring structured data from one worksheet to another, with specific logic for handling different sections and dynamically mapping source and destination columns. This is particularly useful in scenarios where data is organized in a consistent format across multiple sections, and there's a need to consolidate this data into a single sheet.
+                </p>
+        </div>
+    </div>
+
+    <!-- Add more sections as needed -->
+
+</body>
+</html>
